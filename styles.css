@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;;
+    color: rgb(21, 0, 95);
+}
+
+body{
+    background-color: #b6fdf1;
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    position: relative;
+    height: 5rem;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+    padding-right: 1rem;
+    color: rgb(21, 0, 95);
+    font-weight: bold;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgb(21, 0, 95);
+    font-weight: bold;
+}
+
+.callbutton{
+    position: absolute;
+    display: block;
+    right: 0;
+}
+
+.navbar button{
+    font-weight: bolder;
+    font-size: .8rem;
+    padding: .8rem;
+    background-color: #b6fdf1;
+    border: .1rem solid rgb(21, 0, 95);
+    border-radius: .3rem;
+    color: rgb(21, 0, 95);
+}
+
+.navbar a:hover{
+    cursor: pointer;
+    color: rgb(23, 45, 241);
+}
+
+.navbar button:hover{
+    color: rgb(23, 45, 241);
+    border-color:rgb(23, 45, 241);
+}
+
+/* carousal */
+
+.slideshow{
+    display: flex;
+    align-items: center;
+    height: 35rem;
+    position: relative;
+}
+
+.slide img{
+    max-width: 100%;
+    box-shadow: 0px 0px .5rem 0px #888888;
+}
+
+.slides{
+    display: none;   
+}
+
+.slidebutton{
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    opacity: .5;
+}
+
+#left{
+    top: 40%;
+    left: 1rem;
+}
+
+#right{
+    top: 40%;
+    right: 1rem;
+}
+
+.slidebutton:hover{
+    cursor: pointer;
+    background-color:rgb(207, 204, 204) ;
+}
+
+.slide div{
+    position: absolute;
+    top: 83%;
+    right: 50%;
+}
+.circle{
+    font-size: 2rem;
+    color: rgb(204, 204, 204);
+    font-weight: bolder;
+}
+
+/* services */
+.services{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    row-gap: 5rem;
+    color: rgb(21, 0, 95);
+}
+
+.items{
+    display: flex;
+    column-gap: 4rem;
+    position: relative;
+}
+
+#item2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.item1{
+    clear: both;
+}
+
+.section1{
+    max-width: 50%;
+}
+
+.section1 p{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+}
+
+.section1 h2{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.secton2{
+    
+    max-width: 50%;
+    
+}
+
+.section2 img{
+   box-shadow: 0px 0px .5rem 0px #888888;
+    width: 100%;
+    
+}
+
+/* clients */
+
+.clients{
+    padding: 4rem 0;
+}
+
+.clients p{
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    padding-bottom: 3rem;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 4.4rem;
+    row-gap: 2rem;
+}
+
+.images img{
+    max-width: 100%;
+}
+
+/* Form section */
+.formsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 0;
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.part1 p:first-child{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 1.5rem;
+}
+
+.part1 p:nth-child(2){
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    max-width: 75%;
+    color: rgb(123, 123, 250);
+}
+
+.part1 input,select,button{
+    padding: 1rem;
+    font-size: .85rem;
+    margin-bottom: 1rem;
+    border: .1rem solid rgb(21, 0, 95);
+    border-radius: .3rem;
+    color: rgb(21, 0, 95);
+    outline: none;
+}
+
+.part1 button{
+    background-color: rgb(50, 70, 250);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
+
+.formsection .part2{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 5rem;
+}
+
+.aise{
+    padding-bottom: 4rem;
+}
+
+.aise h3{
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.aise i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* footer */
+footer{
+    background: rgb(230, 229, 229);
+    padding: 5rem 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.address h4{
+    font-size: 1rem;
+    padding-bottom: .2rem;
+}
+
+.address p:nth-child(3)
+{
+    font-size: .9rem;
+    padding-bottom: .8rem;
+    color: rgb(123, 123, 250);
+}
+.address p:nth-child(2)
+{
+    font-size: .9rem;
+    padding-bottom: 0;
+    color: rgb(123, 123, 250);
+}
+
+.part-2 h4{
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+.part-2 p{
+    font-size: .9rem;
+    padding-bottom: .5rem;
+    color: rgb(123, 123, 250);
+}
+
+.part-3 h4{
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+.part-3 p{
+    font-size: .9rem;
+    padding-bottom: .5rem;
+    color: rgb(123, 123, 250);
+}
